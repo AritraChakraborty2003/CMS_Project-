@@ -187,10 +187,10 @@ app.post("/babyShowersAPI",(req,res,next) => {
 
 /* ----------- */
 
-app.set('view engine','ejs');
+/*app.set('view engine','ejs');
 app.get('/',(req,res)=>{
     res.render('index');
-})
+})*/
 
 /*  The get() response of APIs */
 app.get("/birthdaysAPI",(req,res)=>{
