@@ -1,0 +1,156 @@
+   
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans";
+    font-optical-sizing: auto;  
+}
+.headerText1{
+    width: 100vw;
+    height: 15vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tag{
+    text-align: center;
+    margin-left: 10vmin;
+}
+.containerCMS{
+    width:min(100vw,95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vmin;
+
+}
+ body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+ }
+ .banner{
+    height:45vmin;
+    width:100vw;
+    margin-top: 20vmin;
+    background-color: #dcb05f;  
+    
+    color: white;
+ }
+.box{
+
+
+    width:min(100vw,95%);
+     display: flex;
+     justify-content: center;
+
+
+     align-items: center;
+   
+}
+.formContainer{
+        width: 100%;
+        margin-top: 5vmin;
+        display: flex;
+     
+        justify-content: center;
+}
+.formDiv{
+
+    margin-bottom: 10vmin;
+    display: flex;
+    border: 3px dashed grey;
+    height: 40vmin;
+    visibility: hidden;
+    align-items: center;
+    padding: 5vmin;
+    width: min(85vmin,98%);
+    justify-content: center
+}
+.event{
+   
+    font-size: 3vmin;
+    padding: 1vmin;
+    margin-left: 1vmin;
+    width: min(97%,80vmin);
+}
+.btn{
+    height: 6.5vmin;
+    background-color: #c69e55;  
+    border: 1px solid #c69e55 ;
+  
+    font-size: 2.5vmin;
+    padding: 1vmin;
+    width: 17vmin;
+
+    color: white;
+}
+.btn1{
+
+    border-radius: 1.5vmin;
+    padding: 1.25vmin;
+    font-size: 2.35vmin;
+    color: white;
+    background-color: #c69e55;
+    border: 1px solid #c69e55;
+}
+.bannerText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    
+
+}
+.bannerHeaderText{
+    font-size: 10vmin;
+    font-weight: bold;
+}
+
+
+.bannerSupport{
+    margin-top: -3vmin;
+    font-size: 3vmin;
+}
+.bannerText{
+    height: 100%;
+ 
+}
+.btnHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vmin;
+}
+.imgBanner{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.uploadIcon{
+    height: 15vmin;
+    width: 20vmin;
+}
+.formHolder{
+    margin-left: 2vmin;
+    padding: 1.5vmin;
+    padding-left: 2.35vmin;
+
+}
+
+
+@media(max-width:768px){
+.bannerSupport{
+    margin-top: -3vmin;
+    font-size: 2.15vmin;
+    padding: 1.5vmin;
+}
+
+}

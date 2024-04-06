@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Header OF CMS</title>
+    </head>
+<body>
+<div class="banner">
+  <div class="bannerText">
+     <p class="bannerHeaderText">CMS</p>
+     <br>
+     <p class="bannerSupport">(The One stop soutions for your content needs on <span class="float" id="float"> </span> for dazzzling sphere)</p>
+  </div>
+</div>
+ <div class="containerCMS">
+    <div class="box">
+    <select class="event" id="events">
+    <option value="weddings">weddings</option>
+    <option value="birthdays">birthdays</option>
+    <option value="babyShowers">babyShowers</option>
+    <option value="collegeFests">collegeFests</option>
+    <option value="corporateEvents">corporateEvents</option>
+    <option value="schoolEvents">schoolEvents</option>
+  
+  </select>
+
+            <button type="button" class="btn" onClick="setOption()">Click Here</button>
+            </div>
+ <div class="formContainer" id="formContainer">
+
+    </div>
+
+
+    
+</div>
+</body>
+</html>
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans";
+    font-optical-sizing: auto;  
+}
+.containerCMS{
+    width:min(100vw,95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vmin;
+
+}
+ body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+ }
+ .banner{
+    height:45vmin;
+    width:100vw;
+    background-color: #dcb05f;  
+    
+    color: white;
+ }
+.box{
+
+
+    width:min(100vw,95%);
+     display: flex;
+     justify-content: center;
+
+
+     align-items: center;
+   
+}
+.formContainer{
+        width: 100%;
+        margin-top: 5vmin;
+        display: flex;
+     
+        justify-content: center;
+}
+.formDiv{
+
+    margin-bottom: 10vmin;
+    display: flex;
+    border: 3px dashed grey;
+    height: 40vmin;
+   
+    align-items: center;
+    padding: 5vmin;
+    width: min(85vmin,98%);
+    justify-content: center
+}
+.event{
+   
+    font-size: 3vmin;
+    padding: 1vmin;
+    width: min(97%,90vmin);
+}
+.btn{
+    height: 6.5vmin;
+    background-color: #c69e55;  
+    border: 1px solid #c69e55 ;
+  
+    font-size: 2.5vmin;
+    padding: 1vmin;
+    width: 17vmin;
+
+    color: white;
+}
+.btn1{
+
+    border-radius: 1.5vmin;
+    padding: 1.25vmin;
+    font-size: 2.35vmin;
+    color: white;
+    background-color: #c69e55;
+    border: 1px solid #c69e55;
+}
+.bannerText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    
+
+}
+.bannerHeaderText{
+    font-size: 10vmin;
+    font-weight: bold;
+}
+@media(max-width:768px){
+.bannerSupport{
+    margin-top: -3vmin;
+    font-size: 2.15vmin;
+    padding: 1.5vmin;
+}
+}
+
+.bannerSupport{
+    margin-top: -3vmin;
+    font-size: 3vmin;
+}
+.bannerText{
+    height: 100%;
+ 
+}
+.btnHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vmin;
+}
+.imgBanner{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.uploadIcon{
+    height: 15vmin;
+    width: 20vmin;
+}
+.formHolder{
+    margin-left: 2vmin;
+    padding: 1.5vmin;
+    padding-left: 2.35vmin;
+
+}
+.label{
+    font-size: 3.5vmin;
+}
+input{
+    font-size: 2.25vmin;
+    padding: 1vmin;
+}
+</style>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('.float', {
+            strings: ["Images",
+              "Videos"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true })
+    const setOption=()=>{
+        const val=document.getElementById("events").value+"API";
+        console.log(val);
+
+        document.getElementById("formContainer").innerHTML=`
+        <div class="formDiv" id="formDiv">
+        <div class="uploadIcon">
+            <img src="https://i.postimg.cc/pL0FK1Yz/upload.png" class="imgBanner">
+        </div>
+        <div class="formHolder">
+        <form method="post" action="/${val}" enctype="multipart/form-data">
+        <label for="files" class="label">Select your files:</label>
+        <br>
+        <br>
+        <input type="file" id="files" name="files" multiple>
+        <br>
+        <br>
+        <div class="btnHolder">
+        <input type="submit" class="btn1"></button>
+        </div>
+        </div>
+        </form>
+        </div>`
+    }
+</script>
+
+
+
+
+
+
+
+

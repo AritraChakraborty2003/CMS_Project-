@@ -1,0 +1,32 @@
+.birthday-gallery {
+    margin-top: 10%;
+     background-color: #B49F63;
+     color: #333;
+     text-align: center;
+     color: white;
+     padding: 0.1%;
+   }
+.imgHolder{
+  overflow: hidden;
+  height: min(70vmin,100%);
+  width: min(130vmin,95%);
+}
+.displaySection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  align-items: center;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-top: 1vmin;
+}
+video{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-top: 1vmin;
+}

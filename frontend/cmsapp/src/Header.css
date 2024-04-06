@@ -1,0 +1,103 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  padding: 0.1rem;
+  background-color: #f8f9fa; /* Solid light grey background, adjust as needed */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adds shadow to the header */
+  color: #333; /* Text color */
+  position: fixed; /* Fixes the header at the top of the viewport */
+  width: 100%;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensures the header stays on top of other content */
+  opacity: 0.9;
+}
+.logo {
+  max-width: 8rem; /* Adjust based on your logo size */
+  height: auto;
+  margin-left: 2%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.brand-statement {
+  font-family: "Satisfy", cursive;
+  font-size: 3rem; /* Adjust size based on your design needs */
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2%;
+}
+
+.contact-info a {
+  color: inherit; /* Ensures link color matches the text color */
+  text-decoration: none; /* No underline by default */
+  cursor: pointer; /* Changes cursor to indicate interactivity */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scaling */
+  display: flex;
+  align-items: center;
+  gap: 1%; /* Adjusts the space between the icon and text */
+  font-size: 1rem;
+}
+
+.contact-info a:hover {
+  color: #AD9551; /* Highlight color on hover, adjust to match your theme */
+  transform: scale(1.1); /* Increases size of the text and symbol */
+}
+
+
+.contact-info a svg {
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+  height: auto;
+  width: 1.2rem;
+}
+
+.contact-info a:hover svg {
+  transform: scale(1.1); /* Scale icons on hover */
+}
+@media (max-width: 768px) {
+  .contact-info a {
+    font-size: 0.9rem;
+  }
+  .logo {
+    max-width: 8rem; /* Adjust based on your logo size */
+    height: auto;
+  }
+  .contact-info a svg {
+   height: auto;
+    width: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+   width: 100vw;
+    gap: 1rem; /* Adjust gap for better spacing */
+  }
+
+  .logo {
+    width: 30%; /* Adjust logo width for smaller screens */
+    margin: 0 auto; /* Center logo */
+  }
+
+  .brand-statement {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 0.5rem 0; /* Adjust padding */
+  }
+
+  
+
+  .contact-info a {
+    font-size: 0.5rem; /* Reduce font size */
+    font-weight: 550;
+  }
+
+  .contact-info a svg {
+    width: 0.875rem; /* Scale down icons */
+  }
+}
